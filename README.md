@@ -5,8 +5,11 @@ Files:
       python closer_finder.py \<start> \<end> <bool_physio>
       
 where:
-<start> indicates the index of a molecule in the dataset 'embd_neighbours_only_100K_rmse_original_smiles.csv' you want to start with
-<end> -- the index of the last molecule in a dataset
+
+\<start> indicates the index of a molecule in the dataset 'embd_neighbours_only_100K_rmse_original_smiles.csv' you want to start with
+
+\<end> -- the index of the last molecule in a dataset
+
 <bool_physio> is an indicator for an embedding you want to test (in order to generate closest molecules by Physio Chemical Featurization run 'physio_featurization.py' file, otherwise for Circular Fingerprint Featurizaion there is needed a resulting file after running 'cf_featurization.py' file)
 
 3) After several hours the algorithm will generate appropriate file depending on the inputs.
